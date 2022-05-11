@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url('https://miricanvas.zendesk.com/hc/article_attachments/900002143643/___________________5_.png');
+  background-size: 100% 100%;
+}
+
+#main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  height: 100vh;
+  width: 90%;
+}
+
+.drum-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 10%;
+  border: 1px solid black;
+  padding: 0.5rem;
+  transition: 0.5s;
+}
+
+.drum-key {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.drum-type {
+  font-size: 0.75rem;
+  color: teal;
+}
+
+.playing {
+  transform: scale(1.15);
+  border-color: red;
+}

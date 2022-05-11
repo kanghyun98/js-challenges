@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  height: 4rem;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0 0;
+  height: 100%;
+}
+
+.header-item {
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+}
+
+.fixed-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.15rem;
+  background-color: steelblue;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.fixed-item:hover {
+  opacity: 0.95;
+}
+
+.form-item {
+  width: 100%;
+  height: 100%;
+}
+
+.form-item > input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: slategray;
+}
+
+.timer-last {
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+.timer-end {
+  font-size: 2rem;
+}

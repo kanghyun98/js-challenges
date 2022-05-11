@@ -1,0 +1,89 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: whitesmoke;
+}
+
+.title {
+  margin: 0;
+  padding: 3rem 3rem;
+  background-color: slategray;
+  font-size: 4rem;
+  color: white;
+}
+
+.navigation {
+  height: 4rem;
+  width: 100%;
+}
+
+.navigation > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.navigation li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-size: 1.2rem;
+  height: 100%;
+}
+
+.navigation .logo {
+  background-color: white;
+  transform: scaleX(0);
+  width: 0;
+  transition: all 0.1s;
+  flex: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation .logo a {
+  color: black;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 60%;
+  margin: 3rem 0;
+  padding: 1.4rem;
+  background-color: white;
+}
+
+.sticky .navigation {
+  top: 0;
+  position: fixed;
+}
+
+.sticky .navigation .logo {
+  transform: scaleX(1);
+  flex: 1;
+}

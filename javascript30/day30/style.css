@@ -1,0 +1,132 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: #ffc600;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  height: 15%;
+}
+
+.score-board > span {
+  margin-right: 0.8rem;
+}
+
+.score-board > .score {
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.control-area {
+  padding: 0 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timer-box {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.timer-box > span {
+  margin: 0 0.2rem;
+}
+
+.str-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 45px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 45px;
+  border: 0;
+  font-size: 1.1rem;
+}
+
+button:hover {
+  background: whitesmoke;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 85%;
+}
+
+.moles-wrapper {
+  position: relative;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+.mole-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 30%;
+  margin: 0 1.6%;
+  overflow: hidden;
+}
+
+.dirt {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background-image: url('../../common/day30_dirt.svg');
+  background-size: cover;
+  bottom: 0;
+}
+
+.mole {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  cursor: pointer;
+  transform: translateY(100%);
+}
+
+.up {
+  transform: translateY(20%);
+}

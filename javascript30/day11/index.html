@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <video class="video" src="../../common/day11.mp4">
+        <source src="/common/day11.mp4" type="video/mp4" />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+      <section class="video__controllers">
+        <div class="video__progress">
+          <div class="video__progress-play"></div>
+        </div>
+        <div class="video__semi-controllers">
+          <div class="semi-controllers__left semi">
+            <button class="video__player">►</button>
+            <div class="video__volume">
+              <label class="volume__icon" for="volume">🔈</label>
+              <input
+                class="volume__controller"
+                type="range"
+                name="volume"
+                max="1"
+                min="0"
+                step="0.01"
+                value="0.5"
+              />
+            </div>
+          </div>
+          <div class="semi-controllers__right semi">
+            <select class="video__speed" name="speed">
+              <option value="0.25">0.25</option>
+              <option value="0.5">0.5</option>
+              <option value="0.75">0.75</option>
+              <option value="1.0" selected>1.0</option>
+              <option value="1.25">1.25</option>
+              <option value="1.5">1.5</option>
+              <option value="1.75">1.75</option>
+              <option value="2.0">2.0</option>
+            </select>
+            <div class="video__skip">
+              <button class="skip-prev">-15s</button>
+              <button class="skip-next">+15s</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

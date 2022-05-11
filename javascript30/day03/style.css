@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.controller-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.controller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.controller-label {
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+}
+
+#img-wrapper {
+  padding: 1rem;
+  background-color: wheat;
+}

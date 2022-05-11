@@ -1,0 +1,125 @@
+@import 'reset.css';
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+}
+
+.video__controllers {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.main:hover .video__controllers {
+  opacity: 1;
+}
+
+/* 재생 바 */
+.video__progress {
+  width: 100%;
+  height: 5px;
+  margin-bottom: 7px;
+  transition: all 0.3s;
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+.video__progress-play {
+  height: 100%;
+  width: 0;
+  background-color: red;
+}
+
+.video__semi-controllers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding-bottom: 0.1rem;
+}
+
+.semi {
+  display: flex;
+  height: 100%;
+}
+
+/* 시작, 정지 버튼 */
+.video__player {
+  background: none;
+  border: 0;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+  width: 3rem;
+}
+
+/* 음향 */
+.video__volume {
+  display: flex;
+  align-items: center;
+}
+
+.volume__icon {
+  cursor: pointer;
+  margin-right: 0.3rem;
+}
+
+/* 배속 버튼 */
+.video__speed {
+  background: none;
+  border: 0;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* 스킵 버튼 */
+.video__skip {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+.video__skip > button {
+  background: none;
+  border: 0;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+  margin: 0 0.3rem;
+}

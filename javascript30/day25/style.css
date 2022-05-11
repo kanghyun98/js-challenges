@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+div {
+  width: 100%;
+  padding: 100px;
+  font-size: 1.5rem;
+}
+
+.one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: thistle;
+}
+
+.two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: mistyrose;
+  margin-top: 3rem;
+}
+
+.three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: coral;
+  margin-top: 3rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  width: 10rem;
+  height: 3rem;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="title">Update CSS Variable with JS</h1>
+      <section class="controller-wrapper">
+        <div class="controller">
+          <label class="controller-label" for="space">Spacing</label>
+          <input
+            class="controller-input"
+            id="input-space"
+            type="range"
+            name="space"
+            min="0"
+            max="100"
+            value="10"
+          />
+        </div>
+        <div class="controller">
+          <label class="controller-label" for="blur">Blur</label>
+          <input
+            class="controller-input"
+            id="input-blur"
+            type="range"
+            name="blur"
+            min="0"
+            max="100"
+            value="0"
+          />
+        </div>
+        <div class="controller">
+          <label class="controller-label" for="color">Base Color</label>
+          <input
+            class="controller-input"
+            id="input-color"
+            type="color"
+            name="color"
+            value="#f5deb3"
+          />
+        </div>
+      </section>
+      <div id="img-wrapper">
+        <img
+          src="https://img.etoday.co.kr/pto_db/2017/09/20170907015230_1122844_600_440.jpg"
+          alt="이미지"
+          id="target-img"
+        />
+      </div>
+    </main>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

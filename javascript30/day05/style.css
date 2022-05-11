@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.6s ease-in-out;
+  font-size: 2rem;
+}
+
+.word {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s ease-in-out;
+}
+
+.image-wrapper > p:first-child {
+  transform: translateY(-100%);
+}
+
+.image-wrapper > p:last-child {
+  transform: translateY(100%);
+}
+
+.clicked > p:first-child,
+.clicked > p:last-child {
+  transform: translateY(0);
+}
+
+.clicked {
+  flex: 3;
+  font-size: 3rem;
+}
+
+#first {
+  background-image: url('https://cdn.pixabay.com/photo/2019/08/01/12/36/illustration-4377408_1280.png');
+}
+
+#second {
+  background-image: url('https://previews.123rf.com/images/bogumil/bogumil1301/bogumil130100007/17101750-%ED%91%B8%EB%A5%B8-%ED%95%98%EB%8A%98%EC%97%90-narew-%EA%B0%95-%E2%80%8B%E2%80%8B%EA%B5%AC%EB%A6%84%EA%B3%BC-%EC%97%AC%EB%A6%84-%ED%92%8D%EA%B2%BD.jpg');
+}
+
+#third {
+  background-image: url('https://t1.daumcdn.net/cfile/tistory/232A674B5864D4360D');
+}
+
+#fourth {
+  background-image: url('https://cdn.pixabay.com/photo/2015/03/12/04/43/landscape-669619_1280.jpg');
+}
+
+#fifth {
+  background-image: url('https://t1.daumcdn.net/cfile/tistory/996333405A8280FC23');
+}
